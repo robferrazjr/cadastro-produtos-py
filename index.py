@@ -16,9 +16,12 @@ while opcao != 0:
     opcao = int(input("Escolha uma opção "))
     
     match opcao:
+        
+        #LISTAR TODOS OS PRODUTOS CADASTRADOS
         case 1:
             Produto.listarTodos()
-            
+         
+        #CADASTRAR NOVO PRODUTO
         case 2:
             codigo = input("Digite o código: ")
             nome = input("Digite o nome: ")
@@ -27,7 +30,8 @@ while opcao != 0:
 
             produto = Produto(codigo, nome, quantidade, valor)
             produto.inserir()
-            
+         
+        #ALTERAR PRODUTO JÁ CADASTRADO
         case 3:
             Produto.listarTodos()
             seletor = int(input("Qual item deseja alterar? "))
@@ -39,6 +43,7 @@ while opcao != 0:
             produto = Produto(item["codigo"], item["nome"], quantidade, valor)
             produto.alterar(seletor)            
         
+        #EXCLUIR PRODUTO
         case 4:
             Produto.listarTodos()
             seletor = int(input("Qual item deseja excluir? "))
