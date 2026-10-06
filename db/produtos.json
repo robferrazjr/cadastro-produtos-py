@@ -1,0 +1,20 @@
+[
+    {
+        "codigo": "001",
+        "nome": "Smartphone Poco C65",
+        "quantidade": "12",
+        "valor": "1240"
+    },
+    {
+        "codigo": "002",
+        "nome": "Smartphone iPhone 18 Pro Max",
+        "quantidade": "5",
+        "valor": "12990"
+    },
+    {
+        "codigo": "003",
+        "nome": "Mouse Corsair Harpoon",
+        "quantidade": "30",
+        "valor": "120"
+    }
+]
